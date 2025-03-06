@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class main{
+    
+    public static void main(String[] args){
+        
+        Scanner scan = new Scanner(System.in);
+        
+        String fullname;
+        String familyname;
+        String initials;
+        
+        System.out.println("please enter your fullname:");
+        fullname = scan.nextLine();
+        
+        
+        String[] names = fullname.split(" ");
+
+        
+        initials = names[0].charAt(0) + "." + names[1].charAt(0) + ".";
+        
+        System.out.println("Your initials are: " + initials);
+        System.out.println("Your family name is: " + names[1]);
+        
+        
+    }
+    
+}
