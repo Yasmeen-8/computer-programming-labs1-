@@ -1,0 +1,25 @@
+import java.util.*;
+
+public class main{
+    
+    public static void main(String[] args){
+        
+        Scanner scan = new Scanner(System.in);
+        
+        String ISBN = "";
+        
+        System.out.println("Please enter the ISBN in the following format x-xxx-xxxxx-x:");
+        ISBN = scan.next();
+        
+        String[] ISBNparts = ISBN.split("-");
+        String language = ISBNparts[0];
+        String publisher = ISBNparts[1];
+        String Book = ISBNparts[2];
+        String check = ISBNparts[3];
+        
+        System.out.println("Language is: " + language + "\n" + "Publisher is: " + publisher + "\n" + "Book is: " + Book + "\n" + "Check is: " + check);
+        
+        
+    }
+    
+}
