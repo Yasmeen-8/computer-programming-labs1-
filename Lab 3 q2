@@ -1,0 +1,30 @@
+import java.util.*;
+
+public class main{
+    
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        
+        String namef;
+        String namel;
+        String fullname;
+        
+        System.out.println("Please enter your fullname:");
+        namef = scan.next();
+        namel = scan.next();
+        
+        fullname = namef + " " + namel;
+        
+        String caps = fullname.toUpperCase();
+        String low = fullname.toLowerCase();
+        int length = fullname.length();
+        
+        System.out.println("Your name in uppercase is: " + caps);
+        System.out.println("Your name in lowercase is: " + low);
+        System.out.println("The length of your name is: " + length);
+        
+        
+        
+    }
+    
+}
