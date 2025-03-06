@@ -1,0 +1,28 @@
+// LAB 3 question 1
+
+import java.util.*;
+
+public class main{
+
+    public static void main(String[] args){
+        // initiating scanner
+        
+        Scanner scan = new Scanner(System.in);
+        
+        String nameF;
+        String nameL;
+        String age;
+        String country;
+        
+        System.out.println("Please enter your name:");
+        nameF = scan.next();
+        nameL = scan.next();
+        System.out.println("Please enter your age:");
+        age = scan.next();
+        System.out.println("Please enter your country of birth: \n");
+        country = scan.next();
+        
+        System.out.println("Hi " + nameF + " " + nameL + ", you're " + age + " and born in " + country);
+        
+    }
+}
