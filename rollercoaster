@@ -1,0 +1,26 @@
+import java.util.*;
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        // Write your code here 💖
+        int minheight = 120;
+        int minweight = 40;
+        int height;
+        int weight;
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("whats your height");
+        height = scan.nextInt();
+
+        System.out.println("whats your weight");
+        weight = scan.nextInt();
+
+        if(height >= minheight && weight >= minweight){
+            System.out.println("Congrats! You can ride!");
+        }else{
+            System.out.println("Sorry, You can't ride today");
+        }
+
+    }
+}
