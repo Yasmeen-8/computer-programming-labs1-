@@ -1,0 +1,29 @@
+import java.util.*;
+
+public class main{
+    
+    public static void main(String[] args){
+        
+        Scanner scan = new Scanner(System.in);
+        
+        int grade;
+        
+        System.out.println("Please enter your exam mark");
+        grade = scan.nextInt();
+        
+        if (grade < 0 || grade > 100){
+            System.out.println("invalid input");
+        }else if (grade >= 85){
+            System.out.println("Your grade is A");
+        }else if (grade >= 70 && grade < 85){
+            System.out.println("Your grade is B");
+        }else if (grade >= 60 && grade < 70){
+            System.out.println("Your grade is C");
+        }else{
+            System.out.println("Your grade is D");
+        }
+        
+    }
+    
+    
+}
