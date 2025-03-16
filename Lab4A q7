@@ -1,0 +1,34 @@
+import java.util.*;
+
+public class main{
+    
+    public static void main(String[] args){
+        
+        Scanner scan = new Scanner(System.in);
+        
+        String password = "C0RR3CT";
+        int phone = 1234;
+        
+        String input;
+        int num;
+        
+        System.out.println("Please enter password:");
+        
+        input = scan.nextLine();
+        
+        if (input.equals(password)){
+            System.out.println("Please enter the last 4 digits of your phone number:");
+            num = scan.nextInt();
+            if(num == phone){
+                System.out.println("You have gained access to the system!");
+            }else{
+                System.out.println("Your phone number is incorrect!");
+            }
+        }else{
+            System.out.println("Your password is incorrect!");
+        }
+        
+        
+      }
+    
+}
