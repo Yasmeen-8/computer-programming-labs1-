@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class main{
+    
+    public static void main(String[] args){
+        
+        Scanner scan = new Scanner(System.in);
+        
+        String password = "C0RR3CT";
+        String ans;
+        
+        System.out.println("Please enter password:");
+        
+        ans = scan.nextLine();
+        
+        boolean check = ans.equals(password);
+        
+        if (check){
+            System.out.println("You have gained access to the system!");
+        }else{
+           System.out.println("Your password is incorrect!");
+        }
+        
+        
+        
+    } 
+    
+}
