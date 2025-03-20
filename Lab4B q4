@@ -1,0 +1,8 @@
+public static void getDecadeBorn (int year) {
+    
+    int decade = (year / 10) % 10 + 1;
+  
+    System.out.println("You were born in the " + decade + "th decade of the century.");
+    
+}
+    
